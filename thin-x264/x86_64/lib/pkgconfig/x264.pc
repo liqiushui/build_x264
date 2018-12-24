@@ -1,0 +1,11 @@
+prefix=/Volumes/NETAC/work/CodeSample/X264/thin-x264/x86_64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: x264
+Description: H.264 (MPEG4 AVC) encoder library
+Version: 0.157.2935 545de2f
+Libs: -L${exec_prefix}/lib -lx264 -lpthread -lm -ldl
+Libs.private: 
+Cflags: -I${prefix}/include
